@@ -35,6 +35,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <title>
         <?= $cakeDescription ?>
     </title>
+
     <?= $this->Html->meta('icon') ?>
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
@@ -72,10 +73,10 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <div class="columns large-6">
         <h4>Environment</h4>
         <ul>
-        <?php if (version_compare(PHP_VERSION, '5.5.9', '>=')): ?>
-            <li class="bullet success">Your version of PHP is 5.5.9 or higher (detected <?= PHP_VERSION ?>).</li>
+        <?php if (version_compare(PHP_VERSION, '5.6.0', '>=')): ?>
+            <li class="bullet success">Your version of PHP is 5.6.0 or higher (detected <?= PHP_VERSION ?>).</li>
         <?php else: ?>
-            <li class="bullet problem">Your version of PHP is too low. You need PHP 5.5.9 or higher to use CakePHP (detected <?= PHP_VERSION ?>).</li>
+            <li class="bullet problem">Your version of PHP is too low. You need PHP 5.6.0 or higher to use CakePHP (detected <?= PHP_VERSION ?>).</li>
         <?php endif; ?>
 
         <?php if (extension_loaded('mbstring')): ?>
