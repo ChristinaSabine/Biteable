@@ -8,7 +8,22 @@ use App\Controller\AppController;
  *
  * @property \App\Model\Table\BarcodesTable $Barcodes
  */
-class BarcodesController extends AppController
+class BarcodesController extends AppController {
+    
+        use \Crud\Controller\ControllerTrait;
+    public $components = [
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ]
+        ]
+    ];
+}
+
 {
 
     /**
